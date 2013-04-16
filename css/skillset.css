@@ -1,4 +1,13 @@
-.css{
+h1{
 background-color: #fff;
+<<<<<<< HEAD
 color:#000;
+=======
+<<<<<<< Updated upstream
+color:#000;
+=======
+color:blue;
+text-align: center
+>>>>>>> Stashed changes
+>>>>>>> dev
 }
