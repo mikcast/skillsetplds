@@ -1,7 +1,19 @@
 h1{
 background-color: #fff;
 color:#000;
+<<<<<<< HEAD
 color:blue;
 text-align: center
 
 }
+=======
+text-align: center;
+}
+span{
+	float:left;
+	display:inline-block;
+}
+h3{
+	text-decoration: none;
+}
+>>>>>>> error
