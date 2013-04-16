@@ -1,0 +1,64 @@
+// ===================================
+//              Panels
+// ===================================
+
+
+
+
+.callout {
+  position:relative;
+  word-wrap:break-word;
+  padding:1em;
+  background:$button-color;
+  border:1px solid $button-active;
+  color:$button-text;
+  margin-bottom:15px;
+  @include rounded($radius);
+  &.small {
+    font-size:0.8em;
+  }
+  &.large {
+    font-size:1.5em;
+  }
+  &.info {
+    background-color:$info-background;
+    color:$info-color;
+    border-color:$info-border;
+  }
+  &.alert {
+    background-color:$alert-background;
+    color:$alert-color;
+    border-color:$alert-border;
+  }
+  &.warning {
+    background:$warning-background;
+    color:$warning-color;
+    border-color:$warning-border;
+  }
+  &.error {
+    background:$error-background;
+    color:$error-color;
+    border-color:$error-border;
+  }
+  &.success {
+    background:$success-background;
+    color:$success-color;
+    border-color:$success-border;
+  }
+  &.square {
+    @include rounded(0);
+  }
+  &.round {
+    @include rounded(9999px);
+  }
+  &.disabled {
+    @include state(disabled);
+  }
+  // content overrides
+  h1, h2, h3, h4, h5, h6 {
+    color:inherit;
+  }
+  *:last-child {
+    margin-bottom:0;
+  }
+}

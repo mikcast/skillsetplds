@@ -1,0 +1,198 @@
+// ===================================
+//         GroundworkCSS Squares
+// ===================================
+
+
+
+
+$white:     #ffffff;
+$green:     #2ecc71;
+$blue:      #3498db;
+$purple:    #9b59b6;
+$yellow:    #f1c40f;
+$orange:    #e67e22;
+$red:       #e74c3c;
+$pink:      #f02475;
+$turquoise: #1abc9c;
+$asphalt:   #34495e;
+
+
+.tiles {
+  position:relative;
+
+  .tile {
+    display:inline-block;
+    background-color:darken($background-color,20%);
+    border:6px solid $border-color;
+    color:$font-color;
+    display:inline-block;
+    word-wrap:break-word;
+    padding:0.25em;
+    margin-bottom:0.25em;
+    text-align:center;
+    font-size:1em;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    @include transition(background-color 0.25s ease-out);
+    @include rounded($radius);
+    cursor:pointer;
+    i {
+      font-size:2em;
+      display:block;
+      margin:0.15em 1em;
+    }
+    &.on, &:hover, &:focus {
+      text-decoration:none;
+      background-color:darken($background-color,25%);
+      color:darken($font-color,10%);
+      border-color:darken($border-color,5%);
+    }
+    &.active, &.active:hover, &.active:focus {
+      background-color:darken($background-color,30%);
+      color:darken($font-color,20%);
+      border-color:darken($border-color,20%);
+    }
+    &.disabled {
+      @include state(disabled,normal,lighten(gray,20%));
+    }
+    &.small {
+      font-size:0.75em;
+    }
+    &.large {
+      font-size:1.5em;
+    }
+    &.square {
+      @include rounded(0);
+    }
+    &.round {
+      @include rounded(9999px);
+    }
+
+    &.green {
+      color:$green;
+      &.on, &:hover, &:focus {
+        background-color:lighten($green,10%);
+        border-color:$green;
+        color:$white;
+      }
+      &.active, &.active:hover, &.active:focus {
+        background-color:$green;
+        color:$button-active-text;
+        border-color:darken($green,10%);
+      }
+    }
+
+    &.blue {
+      color:$blue;
+      &.on, &:hover, &:focus {
+        background-color:lighten($blue,10%);
+        border-color:$blue;
+        color:$white;
+      }
+      &.active, &.active:hover, &.active:focus {
+        background-color:$blue;
+        color:$button-active-text;
+        border-color:darken($blue,10%);
+      }
+    }
+
+    &.purple {
+      color:$purple;
+      &.on, &:hover, &:focus {
+        background-color:lighten($purple,10%);
+        border-color:$purple;
+        color:$white;
+      }
+      &.active, &.active:hover, &.active:focus {
+        background-color:$purple;
+        color:$button-active-text;
+        border-color:darken($purple,10%);
+      }
+    }
+
+    &.yellow {
+      color:$yellow;
+      &.on, &:hover, &:focus {
+        background-color:lighten($yellow,10%);
+        border-color:$yellow;
+        color:$white;
+      }
+      &.active, &.active:hover, &.active:focus {
+        background-color:$yellow;
+        color:$button-active-text;
+        border-color:darken($yellow,10%);
+      }
+    }
+
+    &.orange {
+      color:$orange;
+      &.on, &:hover, &:focus {
+        background-color:lighten($orange,10%);
+        border-color:$orange;
+        color:$white;
+      }
+      &.active, &.active:hover, &.active:focus {
+        background-color:$orange;
+        color:$button-active-text;
+        border-color:darken($orange,10%);
+      }
+    }
+
+    &.red {
+      color:$red;
+      &.on, &:hover, &:focus {
+        background-color:lighten($red,10%);
+        border-color:$red;
+        color:$white;
+      }
+      &.active, &.active:hover, &.active:focus {
+        background-color:$red;
+        color:$button-active-text;
+        border-color:darken($red,10%);
+      }
+    }
+
+    &.pink {
+      color:$pink;
+      &.on, &:hover, &:focus {
+        background-color:lighten($pink,10%);
+        border-color:$pink;
+        color:$white;
+      }
+      &.active, &.active:hover, &.active:focus {
+        background-color:$pink;
+        color:$button-active-text;
+        border-color:darken($pink,10%);
+      }
+    }
+
+    &.turquoise {
+      color:$turquoise;
+      &.on, &:hover, &:focus {
+        background-color:lighten($turquoise,10%);
+        border-color:$turquoise;
+        color:$white;
+      }
+      &.active, &.active:hover, &.active:focus {
+        background-color:$turquoise;
+        color:$button-active-text;
+        border-color:darken($turquoise,10%);
+      }
+    }
+
+    &.asphalt {
+      color:$asphalt;
+      &.on, &:hover, &:focus {
+        background-color:lighten($asphalt,10%);
+        border-color:$asphalt;
+        color:$white;
+      }
+      &.active, &.active:hover, &.active:focus {
+        background-color:$asphalt;
+        color:$button-active-text;
+        border-color:darken($asphalt,10%);
+      }
+    }
+  }
+}

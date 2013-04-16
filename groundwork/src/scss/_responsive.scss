@@ -1,0 +1,228 @@
+.desktop-only { display:block; }
+.hide-on-desktop {}
+
+.ipad-only { display:none; }
+.hide-on-ipad {}
+
+.small-tablet-only { display:none; }
+.hide-on-small-tablet {}
+
+.mobile-only { display:none; }
+.hide-on-mobile {}
+
+///////////////////////
+//   large desktops  //
+///////////////////////
+// @include large-desktop {
+//  
+// }
+
+
+
+
+///////////////////////
+//      desktops     //
+///////////////////////
+@include desktop {
+  // do not remove -- required for desktop helpers
+}
+
+
+
+
+///////////////////////
+//       ipads       //
+///////////////////////
+@include ipad {
+  // do not remove -- required for ipad helpers
+}
+
+
+
+
+///////////////////////
+//   small tablets   //
+///////////////////////
+@include small-tablet {
+  // do not remove -- required for small-tablet helpers and adaptations
+  @include grid-responsive();
+  .nav {
+    width:100%;
+    ul, ul.row {
+      li {
+        display:block;
+        width:100% !important;
+        &:first-child {
+          > a, > , > a:visited {
+            @include rounded($radius $radius 0 0);
+          }
+        }
+        &:last-child {
+          > a, > , > a:visited {
+            @include rounded(0 0 $radius $radius);
+          }
+        }
+        &:only-child {
+          > a, > , > a:visited {
+            @include rounded($radius);
+          }
+        }
+        a, a:visited {
+          border:none;
+          border-top:1px solid $button-active;
+        }
+        ul {
+          position:static;
+          li {
+            a, a:visited {
+              @include rounded(0);
+            }
+            &:first-child,
+            &:last-child,
+            &:only-child {
+              a, a:visited {
+                @include rounded(0);
+              }
+            }
+          }
+        }
+        &:first-child {
+          a, a:visited {
+            @include rounded($radius $radius 0 0);
+          }
+        }
+        &:last-child {
+          a, a:visited {
+            @include rounded(0 0 $radius $radius);
+          }
+          ul {
+            li {
+              &:last-child {
+                a, a:visited {
+                  @include rounded(0 0 $radius $radius);
+                }
+              }
+            }
+          }
+        }
+        &:only-child {
+          a, a:visited {
+            @include rounded($radius);
+          }
+        }
+      }
+    }
+  }
+  // hamburger menu
+  .nav {
+    &.menu {
+      display:block;
+      float:none;
+      &:before {
+        content:attr(data-label);
+        float:left;
+        color:$button-text;
+        line-height:2.2;
+      }
+      background-color:$button-color;
+      padding:$gutter;
+      padding-bottom:0;
+      @include rounded($radius);
+      .menu-toggle {
+        display:inline-block !important;
+        float:right;
+        margin-bottom:$gutter;
+      }
+      > ul, > ul.row {
+        display:block !important;
+        overflow:hidden;
+        max-height:0;
+        width:auto;
+        margin:0 (-$gutter);
+        clear:both;
+        @include transition(all 0.2s ease);
+        li {
+          a, a:visited {
+            border:none;
+            border-top:1px solid $button-active;
+            &:first-child, &:last-child {
+              @include rounded(0);
+            }
+            &:hover, &:focus {
+              border:none;
+              border-top:1px solid $button-active;
+            }
+          }
+          &:last-child {
+            a, a:visited {
+              @include rounded(0 0 $radius $radius);
+            }
+          }
+          ul {
+            position:static;
+          }
+        }
+      }
+      &.on {
+        > ul {
+          max-height:1000px;
+        }
+      }
+    }
+  }
+  .tabs:not(.small-tablet):not(.mobile):not(.vertical) {
+    > ul {
+      li {
+        float:none;
+        width:100%;
+        margin:0;
+        a {
+          @include rounded(0);
+          border-bottom:none;
+          &:before, &:after {
+            display:none !important;
+          }
+        }
+        &:first-child a {
+          @include rounded($radius $radius 0 0);
+        }
+      }
+    }
+  }
+}
+
+
+
+
+///////////////////////
+//     handhelds     //
+///////////////////////
+@include mobile {
+  // do not remove -- required for mobile helpers and adaptations
+  @include grid-responsive(false);
+  .tabs:not(.mobile) {
+    > ul {
+      li {
+        float:none;
+        width:100%;
+        a {
+          @include rounded(0);
+          border-bottom:none;
+        }
+        &:first-child a {
+          @include rounded($radius $radius 0 0);
+        }
+      }
+    }
+  }
+}
+
+
+
+
+///////////////////////
+//  small handhelds  //
+///////////////////////
+// @include small-mobile {
+
+// }
