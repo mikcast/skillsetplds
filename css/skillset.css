@@ -1,4 +1,9 @@
 .css{
 background-color: #fff;
+float: left;
+}
 
+
+.bold{
+	font-weight: bold;
 }
