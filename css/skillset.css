@@ -2,7 +2,7 @@ h1{
 background-color: #fff;
 color:#000;
 color:blue;
-text-align: center
+text-align: left;
 
 }
 
@@ -30,5 +30,5 @@ img{
 
 .pruebacampos{
 	display: block;
-	
+	float: left;
 }
