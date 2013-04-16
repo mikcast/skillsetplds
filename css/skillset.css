@@ -1,5 +1,6 @@
 h1{
 background-color: #fff;
+<<<<<<< HEAD
 color:#000;
 <<<<<<< HEAD
 color:blue;
@@ -7,6 +8,9 @@ text-align: center
 
 }
 =======
+=======
+color:blue;
+>>>>>>> campos
 text-align: center;
 }
 span{
@@ -16,4 +20,21 @@ span{
 h3{
 	text-decoration: none;
 }
+<<<<<<< HEAD
 >>>>>>> error
+=======
+img{
+	width: 300px;
+}
+
+
+
+
+
+
+
+
+.pruebacampos{
+	display: block;
+}
+>>>>>>> campos
