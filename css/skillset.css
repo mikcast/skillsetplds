@@ -1,27 +1,8 @@
-h1{
-background-color: #fff;
-color:#000;
-color:blue;
-text-align: left;
-
+@font-face {
+  font-family: 'Open Sans';
+  src: url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
 }
 
+body {
+	font-family: 'Open Sans', sans-serif;
 }
-span{
-	float:left;
-	display:inline-block;
-}
-h3{
-	text-decoration: none;
-}
-
-img{
-	width: 300px;
-}
-
-.pruebajorge{
-	display: none;
-}
-
-
-
