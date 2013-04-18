@@ -68,3 +68,37 @@ a {
 	-webkit-box-shadow: inset 0 0 10px 8px#fff;
 	box-shadow: inset 0 0 10px 8px #fff;
 } 
+header h1 {
+    /* remove h1 text from the viewport */
+    font: 0/0 a;
+    text-shadow: none;
+color: transparent;
+	margin-bottom: 0px;
+} 
+.red-border{
+border-bottom: solid 3px red;
+}
+
+header h4{
+	margin-top: 15px;
+}
+header .logo{
+	margin-left:20px;
+}
+header input{
+	margin-top:18px;
+}
+header ul li{
+display: inline-block;
+	color: red;
+
+}
+header ul li a{
+	text-decoration: none
+}
+.footer-logo{
+	 background-image: url("../images/bosz.jpg");
+	background-repeat:no-repeat;
+	height:42px;
+	width:121px;
+}
