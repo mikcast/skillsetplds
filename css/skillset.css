@@ -98,6 +98,7 @@ header ul li a{
 }
 .footer-logo{
 	 background-image: url("../images/bosz.jpg");
+	background-repeat:no-repeat;
 	height:42px;
 	width:121px;
 }
