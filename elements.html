@@ -14,6 +14,10 @@
 	.elements {
 		padding-left: 20px;
 	}
+	input{
+		width: auto;
+		margin-bottom: 6px;
+	}
 </style>
 
 </head>
@@ -58,8 +62,15 @@
 	</div>
 	<h3>Landing page UI elements</h3>
 	<div class="elements">
-
-
+		<h4>capability matrix interface</h4>
+		<form>
+			<label for="userName">username</label>
+			<input type="text" id="userName"  placeholder="user name"/>
+			<label for="password">Password</label>
+			<input TYPE="password" required="" type="text" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" value="" name="passwords" id="passwords" list="passwords_pattern0_datalist" placeholder="**********" size="30">
+			<input type="submit" value="Log In">
+		</form>
+		
 	</div>
 
 </body>
