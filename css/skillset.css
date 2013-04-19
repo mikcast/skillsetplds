@@ -103,6 +103,10 @@ header input{
     height: 24px;
     padding: 4px 0 0 32px;
     width: 200px;
+	float: right;
+}
+header p{
+	float: right;
 }
 footer {
 	background-color: Gray;
