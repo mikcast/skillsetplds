@@ -90,11 +90,19 @@ header input{
 }
 header ul li{
 display: inline-block;
-	color: red;
 
 }
 header ul li a{
-	text-decoration: none
+	text-decoration: none;
+	color: #fff;
+}
+header input{
+	 background: none repeat scroll 0 0 #FCFCFC;
+    border: 1px solid #5C3612;
+    box-shadow: 7px 1px 7px 6px  #CECECE inset;
+    height: 24px;
+    padding: 4px 0 0 32px;
+    width: 200px;
 }
 footer {
 	background-color: Gray;
