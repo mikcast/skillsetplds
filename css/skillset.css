@@ -76,7 +76,7 @@ color: transparent;
 	margin-bottom: 0px;
 } 
 .red-border{
-border-bottom: solid 3px red;
+border-bottom: solid 3px #FF0000;
 }
 
 header h4{
