@@ -105,10 +105,6 @@ header input{
     width: 200px;
 	float: right;
 }
-a{
-	
- 
-}
 input{
 	width: auto;
 	margin-bottom: 6px;
@@ -138,7 +134,22 @@ footer {
 /********************************************************************************/
 /********************************************************************************/
 
+.select-dropdown-mini {
+	display: block;
 
+}
+.select-dropdown-mini .selection-placeholder {
+	position: relative;
+	top: 30px;
+	display: block;
+	z-index: 1000;
+	width: 35px;
+	font-size: 25px;
+	text-align: center;
+}
+.select-dropdown-mini .selection-placeholder:hover {
+	color: #fff;
+}
 
 .score-select-comparation-mini {
 	width: 34px;
@@ -149,21 +160,28 @@ footer {
 	display: block;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.4em;
-
+	moz-appearance: none;
 	-webkit-appearance: none;
 	  -webkit-border-radius: 2px;
 	  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
 	  -webkit-padding-end: 20px;
 	  -webkit-padding-start: 2px;
 	  -webkit-user-select: none;
-	padding: 0 10px;
+	padding:6px 10px 6px 8px;
 	font-weight: 300;
+	position: relative;
+	top: 0;
+	left: 0;
 }
 
 select.score-select-comparation-mini option{
-	width: 34px;
+	width: 100%;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 0.8em;
+	font-size: 1.3em;
+	background: #fff;
+	text-align: center;
+	padding: 5px 0px;
+	border: none;
 }
 
 
