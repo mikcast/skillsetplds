@@ -76,7 +76,7 @@ color: transparent;
 	margin-bottom: 0px;
 } 
 .red-border{
-border-bottom: solid 3px red;
+border-bottom: solid 3px #FF0000;
 }
 
 header h4{
@@ -109,7 +109,8 @@ header p{
 	float: right;
 }
 footer {
-	background-color: Gray;
+	 background: none repeat scroll 0 0 #FCFCFC;
+    box-shadow: 7px 1px 7px 6px  #CECECE inset;
 	min-height: 100px;
 }
 .footer-logo{
