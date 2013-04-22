@@ -105,13 +105,48 @@ header input{
     width: 200px;
 	float: right;
 }
-form input{
+form input[type="text"] {
 	width: auto;
 	margin-bottom: 6px;
 	background: none repeat scroll 0 0 #FCFCFC;
 	padding: 4px 0 0 32px;
     border: 1px solid #5C3612;
-    box-shadow: 3px 1px 10px 3px  #CECECE inset;
+    box-shadow: 0px 0px 13px 7px #CECECE inset;
+    border-radius: 0px;
+	}
+form input[type="password"] {
+	width: auto;
+	margin-bottom: 6px;
+	background: none repeat scroll 0 0 #FCFCFC;
+	padding: 4px 0 0 32px;
+    border: 1px solid #5C3612;
+    box-shadow: 0px 0px 13px 7px #CECECE inset;
+    border-radius: 0px;
+	}
+form input[type="date"] {
+	width: auto;
+	margin-bottom: 6px;
+	background: none repeat scroll 0 0 #FCFCFC;
+	padding: 4px 0 0 32px;
+    border: 1px solid #5C3612;
+    box-shadow: 0px 0px 13px 7px #CECECE inset;
+    border-radius: 0px;
+	}
+form input[type="submit"],form input[type="submit"]:hover{
+	border: none;
+	background: none;
+	color: #f00;
+	font-weight: bold;
+}
+	
+form textarea {
+	width: auto;
+	margin-bottom: 6px;
+	background: none repeat scroll 0 0 #FCFCFC;
+	padding: 4px 0 0 12px;
+    border: 1px solid #5C3612;
+    box-shadow: 0px 0px 13px 7px #CECECE inset;
+    border-radius: 0px;
 	}
 header p{
 	float: right;
