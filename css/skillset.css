@@ -72,7 +72,7 @@ header h1 {
     /* remove h1 text from the viewport */
     font: 0/0 a;
     text-shadow: none;
-color: transparent;
+    color: transparent;
 	margin-bottom: 0px;
 } 
 .red-border{
@@ -97,7 +97,7 @@ header ul li a{
 	color: #fff;
 }
 header input{
-	 background: none repeat scroll 0 0 #FCFCFC;
+	background: none repeat scroll 0 0 #FCFCFC;
     border: 1px solid #5C3612;
     box-shadow: 7px 1px 7px 6px  #CECECE inset;
     height: 24px;
@@ -105,9 +105,18 @@ header input{
     width: 200px;
 	float: right;
 }
+form input{
+	width: auto;
+	margin-bottom: 6px;
+	background: none repeat scroll 0 0 #FCFCFC;
+	padding: 4px 0 0 32px;
+    border: 1px solid #5C3612;
+    box-shadow: 3px 1px 10px 3px  #CECECE inset;
+	}
 header p{
 	float: right;
 }
+
 footer {
 	 background: none repeat scroll 0 0 #FCFCFC;
     box-shadow: 7px 1px 7px 6px  #CECECE inset;
