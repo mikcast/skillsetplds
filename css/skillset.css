@@ -111,11 +111,12 @@ form input{
 	background: none repeat scroll 0 0 #FCFCFC;
 	padding: 4px 0 0 32px;
     border: 1px solid #5C3612;
-    box-shadow: 7px 1px 7px 6px  #CECECE inset;
+    box-shadow: 3px 1px 10px 3px  #CECECE inset;
 	}
 header p{
 	float: right;
 }
+
 footer {
 	 background: none repeat scroll 0 0 #FCFCFC;
     box-shadow: 7px 1px 7px 6px  #CECECE inset;
