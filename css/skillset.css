@@ -105,7 +105,7 @@ header input{
     width: 200px;
 	float: right;
 }
-input{
+form input{
 	width: auto;
 	margin-bottom: 6px;
 	background: none repeat scroll 0 0 #FCFCFC;
