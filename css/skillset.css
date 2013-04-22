@@ -118,3 +118,43 @@ footer {
 	height:42px;
 	width:121px;
 }
+
+/********************************************************************************/
+/********************************************************************************/
+/*********************************UI ELEMENTS************************************/
+/********************************************************************************/
+/********************************************************************************/
+
+
+
+.score-select-comparation-mini {
+	width: 34px;
+	height: 34px;
+	border: #000 solid 1px;
+	background: #f22;
+	border-radius: 0px;
+	display: block;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.4em;
+
+	-webkit-appearance: none;
+	  -webkit-border-radius: 2px;
+	  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+	  -webkit-padding-end: 20px;
+	  -webkit-padding-start: 2px;
+	  -webkit-user-select: none;
+	padding: 0 10px;
+	font-weight: 300;
+}
+
+select.score-select-comparation-mini option{
+	width: 34px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.8em;
+}
+
+
+
+
+
+
