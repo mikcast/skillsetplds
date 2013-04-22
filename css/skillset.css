@@ -105,28 +105,107 @@ header input{
     width: 200px;
 	float: right;
 }
-form input{
+form input[type="text"] {
 	width: auto;
 	margin-bottom: 6px;
 	background: none repeat scroll 0 0 #FCFCFC;
 	padding: 4px 0 0 32px;
     border: 1px solid #5C3612;
-    box-shadow: 3px 1px 10px 3px  #CECECE inset;
-	}
+    box-shadow: 0px 0px 13px 7px #CECECE inset;
+    border-radius: 0px;
+}
+form input[type="password"] {
+	width: auto;
+	margin-bottom: 6px;
+	background: none repeat scroll 0 0 #FCFCFC;
+	padding: 4px 0 0 32px;
+    border: 1px solid #5C3612;
+    box-shadow: 0px 0px 13px 7px #CECECE inset;
+    border-radius: 0px;
+}
+form input[type="date"] {
+	width: auto;
+	margin-bottom: 6px;
+	background: none repeat scroll 0 0 #FCFCFC;
+	padding: 4px 0 0 32px;
+    border: 1px solid #5C3612;
+    box-shadow: 0px 0px 13px 7px #CECECE inset;
+    border-radius: 0px;
+}
+form input[type="submit"],form input[type="submit"]:hover{
+	border: none;
+	background: none;
+	color: #f00;
+	font-weight: bold;
+}	
+form textarea {
+	width: auto;
+	margin-bottom: 6px;
+	background: none repeat scroll 0 0 #FCFCFC;
+	padding: 4px 0 0 12px;
+    border: 1px solid #5C3612;
+    box-shadow: 0px 0px 13px 7px #CECECE inset;
+    border-radius: 0px;
+
+}
+button, button:hover{
+	background: red;
+	border-radius: 0;
+	border: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: white;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#ce2900 0%,
+		#d73600 50%,
+		#ea4a00);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#ce2900),
+		color-stop(0.50, #d73600),
+		to(#ea4a00));
+	-moz-box-shadow:
+		0px 1px 3px rgba(255,252,250,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(255,252,250,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(255,252,250,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+}
+header .icon-search{
+	position: relative;
+	float: right;
+	top: -10px;
+	left: 100px;
+	background-color:;
+
+}
 header p{
 	float: right;
 }
 
 footer {
 	 background: none repeat scroll 0 0 #FCFCFC;
-    box-shadow: 7px 1px 7px 6px  #CECECE inset;
+    box-shadow: 0px 1px 32px 5px  #CECECE inset;
 	min-height: 100px;
 }
 .footer-logo{
-	 background-image: url("../images/bosz.jpg");
+	 background-image: url("../images/bosz_footer_logo.png");
 	background-repeat:no-repeat;
 	height:42px;
-	width:121px;
+	width:115px;
+	display: block;
+	float: left;
+}
+footer h4{
+	float: right;
+}
+footer span{
+padding: 18px 0 0 105px;
 }
 
 /********************************************************************************/
