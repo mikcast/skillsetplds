@@ -117,17 +117,33 @@ header input{
     box-shadow: 7px 1px 7px 6px  #CECECE inset;
     height: 24px;
     padding: 4px 0 0 32px;
-    width: 200px;
+    width: 240px;
 	float: right;
+	 border-radius: 0px;
 }
-header .icon-search{
+header .icon-cog{
 	position: relative;
 	float: right;
-	top: -10px;
-	left: 100px;
-	background-color:;
-
+	top: 19px;
+	left: 211px;
+	background: none repeat scroll 0 0 transparent;
+    color: #2B2B2D;
 }
+header .icon-search{
+   background: none repeat scroll 0 0 #FF2222;
+    box-shadow: 0 0 11px 3px #AA0000 inset;
+    float: right;
+    left: 267px;
+    position: relative;
+    top: 19px;
+}
+header .icon-input{
+  height: 22px;
+  width: 22px;
+  border: none;
+  border-radius: 0px;
+}
+
 header p{
 	float: right;
 }
