@@ -386,8 +386,12 @@ form textarea {
 	box-shadow: 0px 0px 17px 3px #a00 inset;
 	border: none;
 	border-radius: 0;
-	font-size: 1em;
-	font-weight: 500;
+	font-size: 1.4em;
+	font-weight: 300;
+	text-align: right;
+	width: 100px;
+	height: 40px;
+	padding: 8px;
 }
 
 
