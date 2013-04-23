@@ -260,7 +260,7 @@ form textarea {
 }
 
 .checkRequest, .checkRequest:hover{
-	background: none repeat scroll 0 0 #F22;
+	background: none repeat scroll 0 0 #e94a00;
 	box-shadow: 0px 0px 17px 3px #a00 inset;
 	border: none;
 	border-radius: 0;
@@ -292,7 +292,7 @@ footer h4{
 	float: right;
 }
 footer span{
-padding: 18px 0 0 105px;
+	padding: 18px 0 0 105px;
 }
 
 
