@@ -49,6 +49,9 @@ a, a:hover {
 	color: #f00;
 	text-decoration: underline;
 }
+input, textarea, select {
+	font-family: 'Open Sans', sans-serif;
+}
 .thin-font {
 	font-weight: 300;
 }
@@ -137,8 +140,109 @@ header p{
 
 /************************************************SCORING COMPARATION ELEMENTS****/
 
-.score-block {
+/************** ROWS ******************/
+.employee-data-comparison {
+	background: none repeat scroll 0 0 #FCFCFC;
+	box-shadow: 0px 12px 50px 0px #CECECE inset;
+	width: 100%;
+	max-width: 950px;
+	height: 46px;
+	border: solid #000 1px;
+	margin: 5px 0 0 0;
+}
+.employee-data-comparison-active {
+	background: none repeat scroll 0 0 #F22;
+	box-shadow: 0px 12px 50px 0px #a00 inset;
+	border: solid #000 1px;
+	width: 100%;
+	max-width: 950px;
+	height: 46px;
+	margin: 5px 0 0 0;
+}
+.employee-data-comparison:hover {
+	border: solid #f22 1px;
+} 
+
+.employee-data {
+	width: 330px;
+	height: 46px;
+	padding: 2px 7px;
+}
+.employee-data input[type="text"]{
+	background: transparent;
+	border: none;
+	font-size: 1.4em;
+	color: #000;
+	border-radius: 0px;
+	height: 25px;
+	padding: 0;
+	font-weight: 300;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+.employee-data input[type="text"]:focus{
+	border: solid black 1px;
+	font-size: 0.8em;
+	color: #000;
+	border-radius: 0px;
+	height: 20px;
 	padding: 3px;
+	margin: 5px 0 2px  0;
+	font-weight: 500;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+.employee-data .select-container{
+	float: left;
+	width: 30%;
+	margin-right: 3px;
+	overflow: hidden;
+	height: 14px;
+}
+.employee-data .select-container .selection-placeholder{
+	position: relative;
+	left: 87%;
+	width: 10%;
+	top: -1px;
+	visibility: hidden;
+}
+
+.employee-data .select-container:hover{
+	border: solid black 1px;
+}
+.employee-data .select-container:hover .selection-placeholder{
+	visibility: visible;
+}
+.employee-data select {
+	font-size: 0.6em;
+	font-weight: 700;
+	border: none;
+	padding: 1px;
+	background: transparent;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	width: 120%;
+	border-radius: 0px;
+	height: 14px;
+	position: relative;
+	top: -16px;
+}
+.employee-data select:hover{
+	font-weight: 600;
+	box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.3) inset;
+}
+.employee-data-comparison-active .employee-data input[type="text"] {
+	color: #fff;
+
+}
+.employee-data-comparison-active .employee-data select option{
+	background: #fff;
+}
+
+/************* SCORING *****************/
+
+.score-block {
+	padding: 7px 3px;
 	display: inline-block;
 }
 .select-dropdown-mini {
