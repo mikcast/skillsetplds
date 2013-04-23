@@ -1,3 +1,9 @@
+/********************************************************************************/
+/********************************************************************************/
+/********************************GLOBAL STYLES***********************************/
+/********************************************************************************/
+/********************************************************************************/
+
 @font-face {
   font-family: 'Open Sans';
   src: url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
@@ -67,7 +73,13 @@ a, a:hover {
 	-moz-box-shadow: inset 0 0 10px 8px #fff;
 	-webkit-box-shadow: inset 0 0 10px 8px#fff;
 	box-shadow: inset 0 0 10px 8px #fff;
-} 
+}
+/********************************************************************************/
+/********************************************************************************/
+/********************************HEADER STYLES***********************************/
+/********************************************************************************/
+/********************************************************************************/
+
 header h1 {
     /* remove h1 text from the viewport */
     font: 0/0 a;
@@ -105,77 +117,6 @@ header input{
     width: 200px;
 	float: right;
 }
-form input[type="text"] {
-	width: auto;
-	margin-bottom: 6px;
-	background: none repeat scroll 0 0 #FCFCFC;
-	padding: 4px 0 0 32px;
-    border: 1px solid #5C3612;
-    box-shadow: 0px 0px 13px 7px #CECECE inset;
-    border-radius: 0px;
-}
-form input[type="password"] {
-	width: auto;
-	margin-bottom: 6px;
-	background: none repeat scroll 0 0 #FCFCFC;
-	padding: 4px 0 0 32px;
-    border: 1px solid #5C3612;
-    box-shadow: 0px 0px 13px 7px #CECECE inset;
-    border-radius: 0px;
-}
-form input[type="date"] {
-	width: auto;
-	margin-bottom: 6px;
-	background: none repeat scroll 0 0 #FCFCFC;
-	padding: 4px 0 0 32px;
-    border: 1px solid #5C3612;
-    box-shadow: 0px 0px 13px 7px #CECECE inset;
-    border-radius: 0px;
-}
-form input[type="submit"],form input[type="submit"]:hover{
-	border: none;
-	background: none;
-	color: #f00;
-	font-weight: bold;
-}	
-form textarea {
-	width: auto;
-	margin-bottom: 6px;
-	background: none repeat scroll 0 0 #FCFCFC;
-	padding: 4px 0 0 12px;
-    border: 1px solid #5C3612;
-    box-shadow: 0px 0px 13px 7px #CECECE inset;
-    border-radius: 0px;
-
-}
-button, button:hover{
-	background: red;
-	border-radius: 0;
-	border: none;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	color: white;
-	padding: 10px 20px;
-	background: -moz-linear-gradient(
-		top,
-		#ce2900 0%,
-		#d73600 50%,
-		#ea4a00);
-	background: -webkit-gradient(
-		linear, left top, left bottom, 
-		from(#ce2900),
-		color-stop(0.50, #d73600),
-		to(#ea4a00));
-	-moz-box-shadow:
-		0px 1px 3px rgba(255,252,250,0.5),
-		inset 0px 0px 2px rgba(255,255,255,1);
-	-webkit-box-shadow:
-		0px 1px 3px rgba(255,252,250,0.5),
-		inset 0px 0px 2px rgba(255,255,255,1);
-	box-shadow:
-		0px 1px 3px rgba(255,252,250,0.5),
-		inset 0px 0px 2px rgba(255,255,255,1);
-}
 header .icon-search{
 	position: relative;
 	float: right;
@@ -188,32 +129,18 @@ header p{
 	float: right;
 }
 
-footer {
-	 background: none repeat scroll 0 0 #FCFCFC;
-    box-shadow: 0px 1px 32px 5px  #CECECE inset;
-	min-height: 100px;
-}
-.footer-logo{
-	 background-image: url("../images/bosz_footer_logo.png");
-	background-repeat:no-repeat;
-	height:42px;
-	width:115px;
-	display: block;
-	float: left;
-}
-footer h4{
-	float: right;
-}
-footer span{
-padding: 18px 0 0 105px;
-}
-
 /********************************************************************************/
 /********************************************************************************/
 /*********************************UI ELEMENTS************************************/
 /********************************************************************************/
 /********************************************************************************/
 
+/************************************************SCORING COMPARATION ELEMENTS****/
+
+.score-block {
+	padding: 3px;
+	display: inline-block;
+}
 .select-dropdown-mini {
 	display: block;
 	width: 34px;
@@ -285,9 +212,107 @@ select.score-select-comparation-mini option{
 	padding: 5px 0px;
 	border: none;
 }
+/********************************************************************************/
 
+/***************************************************************FORM ELEMENTS****/
 
+form input[type="text"] {
+	width: auto;
+	margin-bottom: 6px;
+	background: none repeat scroll 0 0 #FCFCFC;
+	padding: 4px 0 0 32px;
+    border: 1px solid #5C3612;
+    box-shadow: 0px 0px 13px 7px #CECECE inset;
+    border-radius: 0px;
+}
+form input[type="password"] {
+	width: auto;
+	margin-bottom: 6px;
+	background: none repeat scroll 0 0 #FCFCFC;
+	padding: 4px 0 0 32px;
+    border: 1px solid #5C3612;
+    box-shadow: 0px 0px 13px 7px #CECECE inset;
+    border-radius: 0px;
+}
+form input[type="date"] {
+	width: auto;
+	margin-bottom: 6px;
+	background: none repeat scroll 0 0 #FCFCFC;
+	padding: 4px 0 0 32px;
+    border: 1px solid #5C3612;
+    box-shadow: 0px 0px 13px 7px #CECECE inset;
+    border-radius: 0px;
+}
+form input[type="submit"],form input[type="submit"]:hover{
+	border: none;
+	background: none;
+	color: #f00;
+	font-weight: bold;
+}	
+form textarea {
+	width: auto;
+	margin-bottom: 6px;
+	background: none repeat scroll 0 0 #FCFCFC;
+	padding: 4px 0 0 12px;
+    border: 1px solid #5C3612;
+    box-shadow: 0px 0px 13px 7px #CECECE inset;
+    border-radius: 0px;
 
+}
+button, button:hover{
+	background: red;
+	border-radius: 0;
+	border: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: white;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#ce2900 0%,
+		#d73600 50%,
+		#ea4a00);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#ce2900),
+		color-stop(0.50, #d73600),
+		to(#ea4a00));
+	-moz-box-shadow:
+		0px 1px 3px rgba(255,252,250,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(255,252,250,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(255,252,250,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+}
+
+/********************************************************************************/
+/********************************************************************************/
+/*******************************FOOTER ELEMENTS**********************************/
+/********************************************************************************/
+/********************************************************************************/
+
+footer {
+	 background: none repeat scroll 0 0 #FCFCFC;
+    box-shadow: 0px 1px 32px 5px  #CECECE inset;
+	min-height: 100px;
+}
+.footer-logo{
+	 background-image: url("../images/bosz_footer_logo.png");
+	background-repeat:no-repeat;
+	height:42px;
+	width:115px;
+	display: block;
+	float: left;
+}
+footer h4{
+	float: right;
+}
+footer span{
+padding: 18px 0 0 105px;
+}
 
 
 
