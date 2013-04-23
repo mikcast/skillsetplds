@@ -167,6 +167,7 @@ header p{
 	width: 330px;
 	height: 46px;
 	padding: 2px 7px;
+	float: left;
 }
 .employee-data input[type="text"]{
 	background: transparent;
@@ -314,6 +315,10 @@ select.score-select-comparation-mini option{
 	text-align: center;
 	padding: 5px 0px;
 	border: none;
+}
+
+.scoring-data {
+	float: left; 
 }
 
 /********************************************************************************/
