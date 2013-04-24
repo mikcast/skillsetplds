@@ -51,7 +51,11 @@ a, a:hover {
 }
 input, textarea, select {
 	font-family: 'Open Sans', sans-serif;
+	outline: none; 
 }
+select::-moz-focus-inner, input::-moz-focus-inner, select::-moz-focus-inner {   
+	border: 0px solid transparent;
+} 
 .thin-font {
 	font-weight: 300;
 }
@@ -165,6 +169,7 @@ header p{
 	height: 46px;
 	border: solid #000 1px;
 	margin: 5px 0 0 0;
+	clear: left;
 }
 .employee-data-comparison-active {
 	background: none repeat scroll 0 0 #F22;
@@ -222,6 +227,8 @@ header p{
 	width: 10%;
 	top: -1px;
 	visibility: hidden;
+	text-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+
 }
 
 .employee-data .select-container:hover{
