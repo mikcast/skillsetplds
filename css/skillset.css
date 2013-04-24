@@ -250,9 +250,9 @@ header p{
 	-webkit-appearance: none;
 	width: 120%;
 	border-radius: 0px;
-	height: 14px;
+	height: 16px;
 	position: relative;
-	top: -16px;
+	top: -17px;
 }
 .employee-data select:hover{
 	font-weight: 600;
