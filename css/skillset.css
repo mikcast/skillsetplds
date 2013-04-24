@@ -346,20 +346,42 @@ select.score-select-comparation-mini option{
 ul#linkHome{
 	list-style: none;
 }
-ul#linkHome li.quickLink{
+ul#linkHome li.links{
 	width: 100px;
-	height: 90px;
+	height: 100px;
 	background: none repeat scroll 0 0 #CECECE;
 	box-shadow: 0px 0px 13px 7px #acacac inset;
 	text-align: right;
 	padding-right: 10px;
 	padding-top: 10px;
 }
-ul#linkHome li.quickLink a{
+ul#linkHome li.links a{
 	color: #595959;
 	font-size: 1.7em;
 	text-decoration: none;
 }
+ul#linkHome li.quickLink{
+	width: 278px;
+	height: 100px;
+	padding-top: 25px;
+	padding-right: 15px;
+	padding-left: 15px;
+	background: none repeat scroll 0 0 #ebebeb;
+	box-shadow: 0px 0px 13px 7px #d3d3d3 inset;
+	text-align: right;
+}
+ul#linkHome li.quickLink img{
+	float: left;
+	
+}
+ul#linkHome li.quickLink a{
+	color: #595959;
+	font-size: 1.7em;
+	text-decoration: none;
+
+
+}
+
 /********************************************************************************/
 
 /***************************************************************FORM ELEMENTS****/
@@ -412,8 +434,12 @@ form textarea {
 	box-shadow: 0px 0px 17px 3px #a00 inset;
 	border: none;
 	border-radius: 0;
-	font-size: 1em;
-	font-weight: 500;
+	font-size: 1.4em;
+	font-weight: 300;
+	text-align: right;
+	width: 100px;
+	height: 40px;
+	padding: 8px;
 }
 
 
