@@ -464,8 +464,12 @@ footer {
 	float: left;
 }
 footer h4{
-	float: right;
+	  display: block;
+    float: right;
+    padding-top: 6px;
 }
 footer span{
-	padding: 18px 0 0 105px;
-}
+	 display: block;
+    float: left;
+    padding: 15px 0 0 9px;
+    width: 313px;
