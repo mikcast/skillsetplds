@@ -403,9 +403,10 @@ form input[type="date"] {
 form input[placeholder]::-webkit-input-placeholder { 
     color: #000;
 }
- form input[placeholder]::moz-input-placeholder { 
-    color: red;
+input::-moz-placeholder { 
+    color: #000;
 }
+
 form input[type="submit"],form input[type="submit"]:hover{
 	border: none;
 	background: none;
