@@ -1,277 +1,586 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Elements IQ</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <title>Skillset</title>
-    <link rel="apple-touch-icon" href="../images/apple-icons/apple-touch-icon-precomposed.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="../images/apple-icons/apple-touch-icon-57x57-precomposed.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-icons/apple-touch-icon-72x72-precomposed.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-icons/apple-touch-icon-114x114-precomposed.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="../images/apple-icons/apple-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileImage" content="../images/apple-icons/apple-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <!-- Modernizr -->
-    <script src="js/libs/modernizr-2.6.2.min.js"></script>
-    <!-- jQuery -->
-    <script type="text/javascript" src="js/libs/jquery-1.8.2.min.js"></script>
-    <!-- framework css -->
-        <link type="text/css" rel="stylesheet" href="css/groundwork.css">
-     <link rel="stylesheet" type="text/css" href="css/skillset.css">
-	<link rel="stylesheet" type="text/css" href="css/no-svg.css">
-	<link rel="stylesheet" type="text/css" href="css/placeholder_polifill.css">
-    <!--[if IE]>
-    <link type="text/css" rel="stylesheet" href="../css/groundwork-ie.css">
-    <![endif]-->
-    <!--[if lt IE 9]>
-    <script type="text/javascript" src="../js/libs/html5shiv.min.js"></script>
-    <![endif]-->
-    <!--[if IE 7]>
-    <link type="text/css" rel="stylesheet" href="../css/font-awesome-ie7.min.css">
-    <![endif]-->
-    <script type="text/javascript">
-      // extend Modernizr to have datauri test
-      (function(){
-        var datauri = new Image();
-        datauri.onerror = function() {
-          Modernizr.addTest('datauri', function () { return false; });
-        };
-        datauri.onload = function() {
-          Modernizr.addTest('datauri', function () { return (datauri.width == 1 && datauri.height == 1); });
-          Modernizr.load({
-            test: Modernizr.datauri,
-            nope: 'css/no-datauri.css'
-          });
-        };
-        datauri.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
-      })();
-      // fallback if SVG unsupported
-      Modernizr.load({
-        test: Modernizr.inlinesvg,
-        nope: [
-          'css/no-svg.css'
-        ]
-      });
-      // polyfill for HTML5 placeholders
-      Modernizr.load({
-        test: Modernizr.input.placeholder,
-        nope: [
-          'css/placeholder_polyfill.css',
-          'js/libs/placeholder_polyfill.jquery.js'
-        ]
-      });
-      
-    </script>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Elements IQ</title>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	    <title>Skillset</title>
+	    <link rel="apple-touch-icon" href="../images/apple-icons/apple-touch-icon-precomposed.png">
+	    <link rel="apple-touch-icon" sizes="57x57" href="../images/apple-icons/apple-touch-icon-57x57-precomposed.png">
+	    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-icons/apple-touch-icon-72x72-precomposed.png">
+	    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-icons/apple-touch-icon-114x114-precomposed.png">
+	    <link rel="apple-touch-icon" sizes="144x144" href="../images/apple-icons/apple-touch-icon-144x144-precomposed.png">
+	    <meta name="msapplication-TileImage" content="../images/apple-icons/apple-touch-icon-144x144-precomposed.png">
+	    <meta name="msapplication-TileColor" content="#ffffff">
+	    <!-- Modernizr -->
+	    <script src="js/libs/modernizr-2.6.2.min.js"></script>
+	    <!-- jQuery -->
+	    <script type="text/javascript" src="js/libs/jquery-1.8.2.min.js"></script>
+	    <!-- framework css -->
+	        <link type="text/css" rel="stylesheet" href="css/groundwork.css">
+	     <link rel="stylesheet" type="text/css" href="css/skillset.css">
+		<link rel="stylesheet" type="text/css" href="css/no-svg.css">
+		<link rel="stylesheet" type="text/css" href="css/placeholder_polifill.css">
+	    <!--[if IE]>
+	    <link type="text/css" rel="stylesheet" href="../css/groundwork-ie.css">
+	    <![endif]-->
+	    <!--[if lt IE 9]>
+	    <script type="text/javascript" src="../js/libs/html5shiv.min.js"></script>
+	    <![endif]-->
+	    <!--[if IE 7]>
+	    <link type="text/css" rel="stylesheet" href="../css/font-awesome-ie7.min.css">
+	    <![endif]-->
+	    <script type="text/javascript">
+	      // extend Modernizr to have datauri test
+	      (function(){
+	        var datauri = new Image();
+	        datauri.onerror = function() {
+	          Modernizr.addTest('datauri', function () { return false; });
+	        };
+	        datauri.onload = function() {
+	          Modernizr.addTest('datauri', function () { return (datauri.width == 1 && datauri.height == 1); });
+	          Modernizr.load({
+	            test: Modernizr.datauri,
+	            nope: 'css/no-datauri.css'
+	          });
+	        };
+	        datauri.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+	      })();
+	      // fallback if SVG unsupported
+	      Modernizr.load({
+	        test: Modernizr.inlinesvg,
+	        nope: [
+	          'css/no-svg.css'
+	        ]
+	      });
+	      // polyfill for HTML5 placeholders
+	      Modernizr.load({
+	        test: Modernizr.input.placeholder,
+	        nope: [
+	          'css/placeholder_polyfill.css',
+	          'js/libs/placeholder_polyfill.jquery.js'
+	        ]
+	      });
+	      
+	    </script>
 
-<style type="text/css">
-	.elements {
-		padding-left: 20px;
-	}
-	
-</style>
+	<style type="text/css">
+		.elements {
+			padding-left: 20px;
+		}
+		
+	</style>
 
-</head>
-<body>
+	</head>
+	<body>
 
-	<h3>User guide and global text and UI elements</h3>
-	<div class="elements">
-	<h1>H1 instance</h1>
-	<h2>H2 instance</h2>
-	<h2 class="thin-font">H2 thin-font instance</h2>
-	<h3>H3 instance</h3>
-	<h4>H4 instance</h4>
-	<h5>H5 instance</h5>
-	<h6>H6 instance</h6>
-	<p>Paragraph</p>
-	<ul class="main-menu">
-	<li><a>menu 1</a></li>
-	<li>∣</li>
-	<li><a>menu 2</a></li>
-	</ul> 
-	</div>
+		<h3>User guide and global text and UI elements</h3>
+		<div class="elements">
+		<h1>H1 instance</h1>
+		<h2>H2 instance</h2>
+		<h2 class="thin-font">H2 thin-font instance</h2>
+		<h3>H3 instance</h3>
+		<h4>H4 instance</h4>
+		<h5>H5 instance</h5>
+		<h6>H6 instance</h6>
+		<p>Paragraph</p>
+		<ul class="main-menu">
+		<li><a>menu 1</a></li>
+		<li>∣</li>
+		<li><a>menu 2</a></li>
+		</ul> 
+		</div>
 
-	<h3>Home UI elements</h3>
-	<div class="elements">
+		<h3>Home UI elements</h3>
+		<div class="elements">
 		<!--links of homePage-->
 		<ul id="linkHome">
 			<li class="quickLink"><a href="#" class="thin-font">my profile</a></li>
 		</ul>
 		<!--links of homePage-->
 
-	</div>
-	<h3>Skill List UI elements</h3>
-	<div class="elements">
 
-
-	</div>
-	<h3>Add resource UI elements</h3>
-	<div class="elements">
-
-
-	</div>
-	<h3>Skillset Compare UI elements</h3>
-	<div class="elements">
-
-		<!--DropDown for qualifications-->
-		<div class="score-block">
-			<div class="select-dropdown-mini" >
-			<div class="icon-caret-down selection-placeholder" style="display:none"></div>
-			<select class="score-select-comparation-mini" >
-				<option>5</option>
-				<option>4</option>
-				<option>3</option>
-				<option>2</option>
-				<option>1</option>
-			</select>
-			<div class="dropdown-background"></div>
-			</div>
 		</div>
-		<!--End DropDown for qualifications-->
+		<h3>Skill List UI elements</h3>
+		<div class="elements">
 
-		<!--Disabled dropdown for qualifications-->
-		<div class="score-block">
-			<div class="select-dropdown-mini" >
-			<div class="icon-caret-down selection-placeholder" style="display:none"></div>
-			<select class="score-select-comparation-mini" >
-				<option>5</option>
-				<option>4</option>
-				<option>3</option>
-				<option>2</option>
-				<option>1</option>
-			</select>
-			<div class="dropdown-background-disabled"></div>
-			</div>
+
 		</div>
+		<h3>Add resource UI elements</h3>
+		<div class="elements">
 
-		<!--End Disabled dropdown for qualifications-->
-		
-		<div class="employee-data-comparison">
+
 		</div>
+		<h3>Skillset Compare UI elements</h3>
+		<div class="elements">
 
-		<div class="employee-data-comparison">
-			<div class="employee-data">
-				<input type="text" class="employee-name" value="employee name"/>
-				<div class="select-container">
-					<div class="icon-caret-down selection-placeholder"></div>
-				<select class="employee-team">
-					<option>DGTS Operations</option>
-					<option>DGTS Operations</option>
-					<option>DGTS Operations</option>
-					<option>DGTS Operations</option>
-					<option>DGTS Operations</option>
+			<!--DropDown for qualifications-->
+			<div class="score-block">
+				<div class="select-dropdown-mini" >
+				<div class="icon-caret-down selection-placeholder" style="display:none"></div>
+				<select class="score-select-comparation-mini" >
+					<option>5</option>
+					<option>4</option>
+					<option>3</option>
+					<option>2</option>
+					<option>1</option>
 				</select>
-				</div>
-				<div class="select-container">
-					<div class="icon-caret-down selection-placeholder"></div>
-				<select class="employee-position">
-					<option>ACE Tech</option>
-					<option>ACE </option>
-					<option>PM</option>
-					<option>ACE DS</option>
-					<option>Lead</option>
-				</select>
-				</div>
-				<div class="select-container">
-					<div class="icon-caret-down selection-placeholder"></div>
-				<select class="employee-skillset">
-					<option>OPS-Operation Analyst</option>
-					<option>OPS-Operation Analyst</option>
-					<option>OPS-Operation Analyst</option>
-					<option>OPS-Operation Analyst</option>
-				</select>
+				<div class="dropdown-background"></div>
 				</div>
 			</div>
-		</div>
+			<!--End DropDown for qualifications-->
 
-		<div class="employee-data-comparison-active">
-			<div class="employee-data">
-				<input type="text" class="employee-name" value="employee name"/>
-				<div class="select-container">
-					<div class="icon-caret-down selection-placeholder"></div>
-				<select class="employee-team">
-					<option>DGTS Operations</option>
-					<option>DGTS Operations</option>
-					<option>DGTS Operations</option>
-					<option>DGTS Operations</option>
-					<option>DGTS Operations</option>
+			<!--Disabled dropdown for qualifications-->
+			<div class="score-block">
+				<div class="select-dropdown-mini" >
+				<div class="icon-caret-down selection-placeholder" style="display:none"></div>
+				<select class="score-select-comparation-mini" >
+					<option>5</option>
+					<option>4</option>
+					<option>3</option>
+					<option>2</option>
+					<option>1</option>
 				</select>
-				</div>
-				<div class="select-container">
-					<div class="icon-caret-down selection-placeholder"></div>
-				<select class="employee-position">
-					<option>ACE Tech</option>
-					<option>ACE </option>
-					<option>PM</option>
-					<option>ACE DS</option>
-					<option>Lead</option>
-				</select>
-				</div>
-				<div class="select-container">
-					<div class="icon-caret-down selection-placeholder"></div>
-				<select class="employee-skillset">
-					<option>OPS-Operation Analyst</option>
-					<option>OPS-Operation Analyst</option>
-					<option>OPS-Operation Analyst</option>
-					<option>OPS-Operation Analyst</option>
-				</select>
+				<div class="dropdown-background-disabled"></div>
 				</div>
 			</div>
+			<!--End Disabled dropdown for qualifications-->
+			
+			<div class="employee-data-comparison">
+			</div>
+
+			<div class="employee-data-comparison">
+				<div class="employee-data">
+					<input type="text" class="employee-name" value="employee name"/>
+					<div class="select-container">
+						<div class="icon-caret-down selection-placeholder"></div>
+					<select class="employee-team">
+						<option>DGTS Operations</option>
+						<option>DGTS Operations</option>
+						<option>DGTS Operations</option>
+						<option>DGTS Operations</option>
+						<option>DGTS Operations</option>
+					</select>
+					</div>
+					<div class="select-container">
+						<div class="icon-caret-down selection-placeholder"></div>
+					<select class="employee-position">
+						<option>ACE Tech</option>
+						<option>ACE </option>
+						<option>PM</option>
+						<option>ACE DS</option>
+						<option>Lead</option>
+					</select>
+					</div>
+					<div class="select-container">
+						<div class="icon-caret-down selection-placeholder"></div>
+					<select class="employee-skillset">
+						<option>OPS-Operation Analyst</option>
+						<option>OPS-Operation Analyst</option>
+						<option>OPS-Operation Analyst</option>
+						<option>OPS-Operation Analyst</option>
+					</select>
+					</div>
+				</div>
+				<div class="scoring-data">
+							<!--Disabled dropdown for qualifications-->
+			<div class="score-block">
+				<div class="select-dropdown-mini" >
+				<div class="icon-caret-down selection-placeholder" style="display:none"></div>
+				<select class="score-select-comparation-mini" >
+					<option>5</option>
+					<option>4</option>
+					<option>3</option>
+					<option>2</option>
+					<option>1</option>
+				</select>
+				<div class="dropdown-background-disabled"></div>
+				</div>
+			</div>
+			<!--End Disabled dropdown for qualifications-->
+			<!--Disabled dropdown for qualifications-->
+			<div class="score-block">
+				<div class="select-dropdown-mini" >
+				<div class="icon-caret-down selection-placeholder" style="display:none"></div>
+				<select class="score-select-comparation-mini" >
+					<option>5</option>
+					<option>4</option>
+					<option>3</option>
+					<option>2</option>
+					<option>1</option>
+				</select>
+				<div class="dropdown-background-disabled"></div>
+				</div>
+			</div>
+			<!--End Disabled dropdown for qualifications-->
+			<!--Disabled dropdown for qualifications-->
+			<div class="score-block">
+				<div class="select-dropdown-mini" >
+				<div class="icon-caret-down selection-placeholder" style="display:none"></div>
+				<select class="score-select-comparation-mini" >
+					<option>5</option>
+					<option>4</option>
+					<option>3</option>
+					<option>2</option>
+					<option>1</option>
+				</select>
+				<div class="dropdown-background-disabled"></div>
+				</div>
+			</div>
+			<!--End Disabled dropdown for qualifications-->
+			<!--Disabled dropdown for qualifications-->
+			<div class="score-block">
+				<div class="select-dropdown-mini" >
+				<div class="icon-caret-down selection-placeholder" style="display:none"></div>
+				<select class="score-select-comparation-mini" >
+					<option>5</option>
+					<option>4</option>
+					<option>3</option>
+					<option>2</option>
+					<option>1</option>
+				</select>
+				<div class="dropdown-background-disabled"></div>
+				</div>
+			</div>
+			<!--End Disabled dropdown for qualifications-->
+			<!--Disabled dropdown for qualifications-->
+			<div class="score-block">
+				<div class="select-dropdown-mini" >
+				<div class="icon-caret-down selection-placeholder" style="display:none"></div>
+				<select class="score-select-comparation-mini" >
+					<option>5</option>
+					<option>4</option>
+					<option>3</option>
+					<option>2</option>
+					<option>1</option>
+				</select>
+				<div class="dropdown-background-disabled"></div>
+				</div>
+			</div>
+			<!--End Disabled dropdown for qualifications-->
+			<!--Disabled dropdown for qualifications-->
+			<div class="score-block">
+				<div class="select-dropdown-mini" >
+				<div class="icon-caret-down selection-placeholder" style="display:none"></div>
+				<select class="score-select-comparation-mini" >
+					<option>5</option>
+					<option>4</option>
+					<option>3</option>
+					<option>2</option>
+					<option>1</option>
+				</select>
+				<div class="dropdown-background-disabled"></div>
+				</div>
+			</div>
+			<!--End Disabled dropdown for qualifications-->
+			<!--Disabled dropdown for qualifications-->
+			<div class="score-block">
+				<div class="select-dropdown-mini" >
+				<div class="icon-caret-down selection-placeholder" style="display:none"></div>
+				<select class="score-select-comparation-mini" >
+					<option>5</option>
+					<option>4</option>
+					<option>3</option>
+					<option>2</option>
+					<option>1</option>
+				</select>
+				<div class="dropdown-background-disabled"></div>
+				</div>
+			</div>
+			<!--End Disabled dropdown for qualifications-->
+			<!--Disabled dropdown for qualifications-->
+			<div class="score-block">
+				<div class="select-dropdown-mini" >
+				<div class="icon-caret-down selection-placeholder" style="display:none"></div>
+				<select class="score-select-comparation-mini" >
+					<option>5</option>
+					<option>4</option>
+					<option>3</option>
+					<option>2</option>
+					<option>1</option>
+				</select>
+				<div class="dropdown-background-disabled"></div>
+				</div>
+			</div>
+			<!--End Disabled dropdown for qualifications-->
+			<!--Disabled dropdown for qualifications-->
+			<div class="score-block">
+				<div class="select-dropdown-mini" >
+				<div class="icon-caret-down selection-placeholder" style="display:none"></div>
+				<select class="score-select-comparation-mini" >
+					<option>5</option>
+					<option>4</option>
+					<option>3</option>
+					<option>2</option>
+					<option>1</option>
+				</select>
+				<div class="dropdown-background-disabled"></div>
+				</div>
+			</div>
+			<!--End Disabled dropdown for qualifications-->
+			<!--Disabled dropdown for qualifications-->
+			<div class="score-block">
+				<div class="select-dropdown-mini" >
+				<div class="icon-caret-down selection-placeholder" style="display:none"></div>
+				<select class="score-select-comparation-mini" >
+					<option>5</option>
+					<option>4</option>
+					<option>3</option>
+					<option>2</option>
+					<option>1</option>
+				</select>
+				<div class="dropdown-background-disabled"></div>
+				</div>
+			</div>
+			<!--End Disabled dropdown for qualifications-->
+
+
+				</div>
+			</div>
+
+			<div class="employee-data-comparison-active">
+				<div class="employee-data">
+					<input type="text" class="employee-name" value="employee name"/>
+					<div class="select-container">
+						<div class="icon-caret-down selection-placeholder"></div>
+					<select class="employee-team">
+						<option>DGTS Operations</option>
+						<option>DGTS Operations</option>
+						<option>DGTS Operations</option>
+						<option>DGTS Operations</option>
+						<option>DGTS Operations</option>
+					</select>
+					</div>
+					<div class="select-container">
+						<div class="icon-caret-down selection-placeholder"></div>
+					<select class="employee-position">
+						<option>ACE Tech</option>
+						<option>ACE </option>
+						<option>PM</option>
+						<option>ACE DS</option>
+						<option>Lead</option>
+					</select>
+					</div>
+					<div class="select-container">
+						<div class="icon-caret-down selection-placeholder"></div>
+					<select class="employee-skillset">
+						<option>OPS-Operation Analyst</option>
+						<option>OPS-Operation Analyst</option>
+						<option>OPS-Operation Analyst</option>
+						<option>OPS-Operation Analyst</option>
+					</select>
+					</div>
+				</div>
+				<div class="scoring-data">
+							<!--Disabled dropdown for qualifications-->
+			<div class="score-block">
+				<div class="select-dropdown-mini" >
+				<div class="icon-caret-down selection-placeholder" style="display:none"></div>
+				<select class="score-select-comparation-mini" >
+					<option>5</option>
+					<option>4</option>
+					<option>3</option>
+					<option>2</option>
+					<option>1</option>
+				</select>
+				<div class="dropdown-background-disabled"></div>
+				</div>
+			</div>
+			<!--End Disabled dropdown for qualifications-->
+			<!--Disabled dropdown for qualifications-->
+			<div class="score-block">
+				<div class="select-dropdown-mini" >
+				<div class="icon-caret-down selection-placeholder" style="display:none"></div>
+				<select class="score-select-comparation-mini" >
+					<option>5</option>
+					<option>4</option>
+					<option>3</option>
+					<option>2</option>
+					<option>1</option>
+				</select>
+				<div class="dropdown-background-disabled"></div>
+				</div>
+			</div>
+			<!--End Disabled dropdown for qualifications-->
+			<!--Disabled dropdown for qualifications-->
+			<div class="score-block">
+				<div class="select-dropdown-mini" >
+				<div class="icon-caret-down selection-placeholder" style="display:none"></div>
+				<select class="score-select-comparation-mini" >
+					<option>5</option>
+					<option>4</option>
+					<option>3</option>
+					<option>2</option>
+					<option>1</option>
+				</select>
+				<div class="dropdown-background-disabled"></div>
+				</div>
+			</div>
+			<!--End Disabled dropdown for qualifications-->
+			<!--Disabled dropdown for qualifications-->
+			<div class="score-block">
+				<div class="select-dropdown-mini" >
+				<div class="icon-caret-down selection-placeholder" style="display:none"></div>
+				<select class="score-select-comparation-mini" >
+					<option>5</option>
+					<option>4</option>
+					<option>3</option>
+					<option>2</option>
+					<option>1</option>
+				</select>
+				<div class="dropdown-background-disabled"></div>
+				</div>
+			</div>
+			<!--End Disabled dropdown for qualifications-->
+			<!--Disabled dropdown for qualifications-->
+			<div class="score-block">
+				<div class="select-dropdown-mini" >
+				<div class="icon-caret-down selection-placeholder" style="display:none"></div>
+				<select class="score-select-comparation-mini" >
+					<option>5</option>
+					<option>4</option>
+					<option>3</option>
+					<option>2</option>
+					<option>1</option>
+				</select>
+				<div class="dropdown-background-disabled"></div>
+				</div>
+			</div>
+			<!--End Disabled dropdown for qualifications-->
+			<!--Disabled dropdown for qualifications-->
+			<div class="score-block">
+				<div class="select-dropdown-mini" >
+				<div class="icon-caret-down selection-placeholder" style="display:none"></div>
+				<select class="score-select-comparation-mini" >
+					<option>5</option>
+					<option>4</option>
+					<option>3</option>
+					<option>2</option>
+					<option>1</option>
+				</select>
+				<div class="dropdown-background-disabled"></div>
+				</div>
+			</div>
+			<!--End Disabled dropdown for qualifications-->
+			<!--Disabled dropdown for qualifications-->
+			<div class="score-block">
+				<div class="select-dropdown-mini" >
+				<div class="icon-caret-down selection-placeholder" style="display:none"></div>
+				<select class="score-select-comparation-mini" >
+					<option>5</option>
+					<option>4</option>
+					<option>3</option>
+					<option>2</option>
+					<option>1</option>
+				</select>
+				<div class="dropdown-background-disabled"></div>
+				</div>
+			</div>
+			<!--End Disabled dropdown for qualifications-->
+			<!--Disabled dropdown for qualifications-->
+			<div class="score-block">
+				<div class="select-dropdown-mini" >
+				<div class="icon-caret-down selection-placeholder" style="display:none"></div>
+				<select class="score-select-comparation-mini" >
+					<option>5</option>
+					<option>4</option>
+					<option>3</option>
+					<option>2</option>
+					<option>1</option>
+				</select>
+				<div class="dropdown-background-disabled"></div>
+				</div>
+			</div>
+			<!--End Disabled dropdown for qualifications-->
+			<!--Disabled dropdown for qualifications-->
+			<div class="score-block">
+				<div class="select-dropdown-mini" >
+				<div class="icon-caret-down selection-placeholder" style="display:none"></div>
+				<select class="score-select-comparation-mini" >
+					<option>5</option>
+					<option>4</option>
+					<option>3</option>
+					<option>2</option>
+					<option>1</option>
+				</select>
+				<div class="dropdown-background-disabled"></div>
+				</div>
+			</div>
+			<!--End Disabled dropdown for qualifications-->
+			<!--Disabled dropdown for qualifications-->
+			<div class="score-block">
+				<div class="select-dropdown-mini" >
+				<div class="icon-caret-down selection-placeholder" style="display:none"></div>
+				<select class="score-select-comparation-mini" >
+					<option>5</option>
+					<option>4</option>
+					<option>3</option>
+					<option>2</option>
+					<option>1</option>
+				</select>
+				<div class="dropdown-background-disabled"></div>
+				</div>
+			</div>
+			<!--End Disabled dropdown for qualifications-->
+
+
+				</div>
+			</div>
+			
 		</div>
-		
-	</div>
 
-	<h3>Skillset Check Request</h3>
-	<!--Inputs and labels of Request information -->
+		<h3>Skillset Check Request</h3>
+		<!--Inputs and labels of Request information -->
 
-	<div class="elements">
-		<form>
-			<label for="date">date</label>
-			<input type="date" id="date">
-			<label for="userName">name</label>
-			<input type="text" id="userName"  placeholder="user name"/>
-			<label for="team">team</label>
-			<input type="text" id="team"  placeholder="team name"/>
-		
-			<label for="name">name</label>
-			<input type="text" id="name"/>
-			<label for="category">category</label>
-			<input type="text" id="category"/>
-			<label for="skill">skill set</label>
-			<input type="text" id="skill"/>
-		<!--text Area  of Request information -->
+		<div class="elements">
+			<form>
+				<label for="date">date</label>
+				<input type="date" id="date">
+				<label for="userName">name</label>
+				<input type="text" id="userName" placeholder="user name"/>
+				<label for="team">team</label>
+				<input type="text" id="team" placeholder="team name"/>
+				<label for="name">name</label>
+				<input type="text" id="name"/>
+				<label for="category">category</label>
+				<input type="text" id="category"/>
+				<label for="skill">skill set</label>
+				<input type="text" id="skill"/>
+			<!--text Area  of Request information -->
 
-		<textarea rows="4" cols="50"></textarea>
+			<textarea rows="4" cols="50"></textarea>
 
-		<!--Buttons of Request information reset and delete -->
-		<button type="button" onclick="" class="checkRequest">reset</button>
-		<!--Buttons of Request information reset and delete -->
+			<!--Buttons of Request information reset and delete -->
+			<button type="button" onclick="" class="checkRequest">reset</button>
+			<!--Buttons of Request information reset and delete -->
 
-		</form>
-		<a href="#">add field</a>
-	</div>
-		<!--end of inputs and labels of Request information -->
-	<h3>Landing page UI elements</h3>
-	<div class="elements">
-		<!--Log in form -->
+			</form>
+			<a href="#">add field</a>
+		</div>
+			<!--end of inputs and labels of Request information -->
+		<h3>Landing page UI elements</h3>
+		<div class="elements">
+			<!--Log in form -->
 
-		<h3>capability matrix interface</h3>
-		<form>
-			<label for="userName">username</label>
-			<input type="text" id="userName"  placeholder="user name" autofocus/>
-			<label for="password">Password</label>
-			<input TYPE="password" required="" type="text" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" value="" name="passwords" id="passwords" list="passwords_pattern0_datalist" placeholder="**********" size="20">
-			<input type="submit" value="Log In">
-		</form>
-		<!--end of log in form -->
-		
-	</div>
-<!-- scripts-->
-    <script type="text/javascript" src="js/plugins/jquery.cycle2.js"></script>
-    <script type="text/javascript" src="js/groundwork.all.js"></script>
-    <script type="text/javascript" src="js/skillset.js"></script>
-    <!-- google analytics-->
-</body>
-    
-</html>
+			<h3>capability matrix interface</h3>
+			<form>
+				<label for="userName">username</label>
+				<input type="text" id="userName"  placeholder="user name" autofocus/>
+				<label for="password">Password</label>
+				<input TYPE="password" required="" type="text" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" value="" name="passwords" id="passwords" list="passwords_pattern0_datalist" placeholder="**********" size="20">
+				<input type="submit" value="Log In">
+			</form>
+			<!--end of log in form -->
+			
+		</div>
+	<!-- scripts-->
+	    <script type="text/javascript" src="js/plugins/jquery.cycle2.js"></script>
+	    <script type="text/javascript" src="js/groundwork.all.js"></script>
+	    <script type="text/javascript" src="js/skillset.js"></script>
+
+	    
+	    <!-- google analytics-->
+	</body>
+	    
+	</html>
