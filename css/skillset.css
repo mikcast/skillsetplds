@@ -358,20 +358,65 @@ select.score-select-comparation-mini option{
 }
 a.linkHome, a.linkHome:hover{
 	color: #595959;
-	font-size: 2em;
+	font-size: 1.60em;
 	text-decoration: none;
 	margin: 0 5px 0 0;
+
 }
 .linkHome, .quickLink img{
 	float: left;
 }
 .quickLink{
-	width: 278px;
+	width: 295px;
 	height: 100px;
 	padding:25px 15px 0 15px;
 	background: none repeat scroll 0 0 #ebebeb;
 	box-shadow: 0px 0px 13px 7px #d3d3d3 inset;
 	text-align: right;
+}
+a.stick-note, a.stick-note:hover{
+	background: none repeat scroll 0 0 #9e0b00;
+	color: #fff;
+	box-shadow:none;
+	position: absolute;
+	margin: 0 0 0 300px;
+}
+.stick-note img{
+	position: relative;
+	top: -30px;
+	left: -24px;
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	rotation: -10deg;
+}
+a.pencil, a.pencil:hover{
+	background: none repeat scroll 0 0 #e64902;
+	color: #fff;
+	box-shadow:none;
+	position: absolute;
+	margin: 120px 0;
+}
+.pencil img{
+	position: relative;
+	top: -20px;
+	left: -8px;
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	rotation: -10deg;
+}
+a.user-guide, a.user-guide:hover{
+	background: none repeat scroll 0 0 #e46900;
+	color: #fff;
+	box-shadow:none;
+	position: absolute;
+}
+.user-guide img{
+	position: relative;
+	top: -30px;
+	left: -24px;
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	rotation: -10deg;
 }
 
 /********************************************************************************/
