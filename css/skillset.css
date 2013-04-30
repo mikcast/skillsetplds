@@ -219,7 +219,6 @@ header p{
 }
 .employee-data .select-container{
 	float: left;
-	width: 30%;
 	margin-right: 3px;
 	overflow: hidden;
 	height: 14px;
@@ -248,11 +247,12 @@ header p{
 	background: transparent;
 	-moz-appearance: none;
 	-webkit-appearance: none;
-	width: 120%;
+	width: 130%;
 	border-radius: 0px;
 	height: 16px;
 	position: relative;
 	top: -17px;
+	text-align: left;
 }
 .employee-data select:hover{
 	font-weight: 600;
